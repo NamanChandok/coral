@@ -51,7 +51,7 @@
                         <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="lib/comercial.mp4">Our Commercial</a>
+                        <a class="nav-link" href="diagnosis.html">Take our Diagnosis Test</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Suicide Hotline: +91-9152987821</a>
@@ -121,9 +121,9 @@
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a href="care.html">
-                                <div class="care-box service">
-                                    <h1>Caretaker</h1>
+                            <a href="phys.html">
+                                <div class="phys-box service">
+                                    <h1>Physiotherapy</h1>
                                 </div>
                             </a>
                         </div>
@@ -155,16 +155,70 @@
                     <div class="row">
                         <div class="col-md-2 ui-1"></div>
                         <div class="col-md-8 try-box">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt accusantium fugit
-                            voluptates maiores consectetur, voluptate enim illo, vitae laudantium nesciunt quaerat ipsa
-                            non quibusdam quam dolorum possimus. Labore, aut necessitatibus.
-                            <audio>
-                                
+                            <p class="section-text">
+                                Get a clearer picture of what matters most with music and meditations designed to help
+                                boost your ability to focus.
+                            </p>
+                            <audio hidden id="try-audio">
+                                <source src="lib/try.mp3">
                             </audio>
+                            <button type="button" class="btn try-pbtn" onclick="play()" id="play-btn"><i
+                                    class="fal fa-play"></i></button> <span class="try-txt">Play Audio</span>
                         </div>
                         <div class="col-md-2 ui-2"></div>
                     </div>
 
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+        <center>
+            <hr>
+        </center>
+
+        <!-- SUBSCRIPTION PLANS -->
+
+        <div class="section subscription" id="subscription">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 subscription-txt align-left">
+                    <h1 class="section-title">Professional quality, <br> simple pricing</h1>
+                    <div class="section-hr left"></div>
+                    <p class="section-text">
+                        Setup your account in seconds. No complications, no waiting <br>times --- Just Coral
+                    </p>
+                    <a href="#contact" class="quiz-link">
+                        Contact Us
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="free-box cost-plan">
+                                <h2>Starter Plan</h2>
+                                <h1>Free</h1>
+                                <h4>&#8203;</h4>
+                                <center>
+                                    <hr>
+                                </center>
+                                <button type="button" class="btn btn-light details">See Details</button>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="premier-box cost-plan">
+                                <h2>Premier Plan</h2>
+                                <h1>₹199</h1>
+                                <h4>/month</h4>
+                                <center>
+                                    <hr>
+                                </center>
+                                <button type="button" class="btn btn-light details">See Details</button>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-1"></div>
             </div>
