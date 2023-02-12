@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.checkbox-tools:checked+label,
+.checkbox-tools:not(:checked)+label {
+    position: relative;
+    display: inline-block;
+    padding: 1rem;
+    width: 70%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    color: #1f497d;
+}
+
+.checkbox-tools:not(:checked)+label {
+    background-color: #f1f7f9;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.checkbox-tools:checked+label {
+    background-color: #aecbd6 !important;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    color: #fff;
+}
+
+.checkbox-tools:not(:checked)+label:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.checkbox-tools:checked+label .uil,
+.checkbox-tools:not(:checked)+label .uil {
+    display: block;
+}
