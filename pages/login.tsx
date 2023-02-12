@@ -21,7 +21,7 @@ export default function Home() {
             <div className='flex flex-col w-full md:w-3/5 bg-white rounded-lg shadow-md text-center items-center justify-center p-8 md:p-16 space-y-6 overflow-y-scroll scrollbar-thin scrollbar-thumb-secondary scrollbar-track-transparent max-h-full'>
                 <h1 className='font-poppins text-4xl md:text-5xl font-semibold'>Login</h1>
                 <div className='h-[4px] w-1/3 bg-gradient-to-r from-primary to-secondary'></div>
-                <form className='flex flex-col space-y-3 w-3/5 mx-auto' action='api/login' method="post">
+                <form className='flex flex-col space-y-3 w-3/5 mx-auto' action='/dashboard'>
                     <input
                         type="email"
                         name="email"

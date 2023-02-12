@@ -1,17 +1,10 @@
 import React from 'react'
-
-var LocalStorage = require('node-localstorage').LocalStorage,
-localStorage = new LocalStorage('./scratch');
+const store = require("store2");
 
 type Props = {
   logged?: boolean;
 };
 
-function handleLogOut() {
-  console.log("bruh");
-  localStorage.removeItem('user');
-  window.location.replace('login');
-}
 
 export default function Navbar({ logged }: Props) {
     if (logged) {  
@@ -22,7 +15,7 @@ export default function Navbar({ logged }: Props) {
                 <img src="./logo.png" alt="logo" className="h-full"/>
             </a>
           </div>
-          <a onClick={handleLogOut} className='cursor-pointer bg-white text-gray-900 rounded-md px-4 py-1 shadow font-semibold hover:shadow-white transition ease-in-out duration-150'>Log Out</a>
+          <a href='/#home' className='cursor-pointer bg-white text-gray-900 rounded-md px-4 py-1 shadow font-semibold hover:shadow-white transition ease-in-out duration-150'>Log Out</a>
         </nav>
       ); 
     } else {

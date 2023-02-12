@@ -25,7 +25,7 @@ export default function Signup({errorMsg}: Props) {
             <div className='flex flex-col w-full md:w-3/5 bg-white rounded-lg shadow-md text-center items-center md:justify-center p-8 md:p-16 space-y-6 overflow-y-scroll scrollbar-thin scrollbar-thumb-secondary scrollbar-track-transparent max-h-full'>
                 <h1 className='font-poppins text-4xl md:text-5xl font-semibold'>Sign Up</h1>
                 <div className='h-[4px] w-20 md:w-1/3 bg-gradient-to-r from-primary to-secondary flex-shrink-0'></div>
-                <form className='flex flex-col space-y-3 w-fit mx-auto' action='api/register' method='post'>
+                <form className='flex flex-col space-y-3 w-fit mx-auto' action='/login'>
                     <div className="flex-col flex space-x-0 md:flex-row md:space-x-2 space-y-3 md:space-y-0">
                     <input
                         type="text"

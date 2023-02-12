@@ -3,7 +3,6 @@ export interface IQuiz {
       id: number;
       title: string;
     };
-    answers: [IAnswer, IAnswer, IAnswer, IAnswer, IAnswer];
   }
 
   export interface IClientQuiz {

@@ -3,17 +3,17 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import {feedData} from '../data/feedData'
 import Card from '../components/Card'
-
-var LocalStorage = require('node-localstorage').LocalStorage,
-localStorage = new LocalStorage('./scratch');
-
-var logged = localStorage.getItem('user');
+ 
 
 function Dashboard() {
-  
-  var user = JSON.parse(localStorage.getItem('user'));
 
-  const feed = feedData
+  const user = {
+    name: "Naman Chandok",
+    email: "namanchandok1@gmail.com",
+    diagnosis: "Moderate Indication of Anxiety Disorder"
+  }
+
+  const feed = feedData;
 
   return (
     <div className='h-screen overflow-y-scroll scrollbar-thin scrollbar-track-gray-900 scrollbar-thumb-secondary/80 scroll-smooth'>

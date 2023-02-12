@@ -24,12 +24,5 @@ export const feedData = [
         desc: "In the midst of movement and chaos, keep stillness inside of you.",
         url: "/music",
         type: "music"
-    },
-    {
-        title: "Reset: Decompress Your Body and Mind",
-        imgUrl: "video2.png",
-        desc: "Hit reset with this free meditation from Headspace, guided by Andy Puddicombe.",
-        url: "/video",
-        type: "video"
     }
 ]

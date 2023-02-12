@@ -1,22 +1,14 @@
 import Head from 'next/head'
 import { GetServerSideProps, NextPage } from "next";
 import { useRouter } from "next/router";
-import { LocalStorage } from "node-localstorage";
-
-global.localStorage = new LocalStorage('./scratch'); 
 
 function Quiz() {
 
-  var user_l = localStorage.getItem('user')
-  if (user_l) { 
-    var user = JSON.parse(user_l);
+  const user = {
+    name: "Naman Chandok",
+    email: "namanchandok1@gmail.com",
+    diagnosis: "Moderate Indication of Anxiety Disorder"
   }
-
-  const router = useRouter();
-
-  const handleStart = async () => {
-    router.push("/quiz/0");
-  };
 
   return (
     <div className='h-screen overflow-y-scroll scrollbar-thin scrollbar-track-gray-900 scrollbar-thumb-secondary/80 scroll-smooth'>
@@ -34,7 +26,7 @@ function Quiz() {
 
       <div className="h-screen w-screen flex flex-row items-center justify-center bg-[url('/form-texture.svg')] bg-cover p-4">
             <div className='flex flex-col w-full md:w-3/5 bg-white rounded-lg shadow-md text-center items-center justify-center p-8 md:p-16 space-y-6 overflow-y-scroll scrollbar-thin scrollbar-thumb-secondary scrollbar-track-transparent max-h-full'>
-                <form className='flex flex-col space-y-3 w-3/5 mx-auto font-cabin text-sm items-center justify-center' onSubmit={handleStart}>
+                <form className='flex flex-col space-y-3 w-3/5 mx-auto font-cabin text-sm items-center justify-center' action='quiz/0'>
                   <h1 className='font-poppins text-4xl font-semibold'>Welcome {user.name}</h1>
                   <div className='h-[4px] w-1/3 bg-gradient-to-r from-primary to-secondary self-center flex-shrink-0'></div>
 

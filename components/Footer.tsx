@@ -13,7 +13,7 @@ export default function Footer({logged}: Props) {
             <a href='/#about' className='px-4'>About Us</a>
             <a href='/#services' className='px-4'>Services</a>
             <a href='/#contact' className='px-4'>Contact Us</a>
-            { logged ? <a href='/logout' className='px-4'>Log Out</a> : <a href='/login' className='px-4'>Login</a> }
+            { logged ? <a href='/#home' className='px-4'>Log Out</a> : <a href='/login' className='px-4'>Login</a> }
         </div>
     </div>
   )
