@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -40,9 +40,9 @@ export default function Home() {
                         className="bg-primary/80 text-gray-900 font-semibold cursor-pointer px-6 py-3 w-full rounded-md hover:bg-primary transition transition-400 ease-in-out"
                     />
                 </form>
-                <p className='text-md font-cabin'>Don't have an account? <a href='signup' className='text-primary font-semibold'>Sign Up</a></p>      
+                <p className='text-md font-cabin'>Don&apos;t have an account? <a href='signup' className='text-primary font-semibold'>Sign Up</a></p>      
                 <hr className='border w-full'/>
-                <a href='/'><img src='./home-text.png' alt='coral always there for you' className='w-full md:w-auto md:h-16'/></a>          
+                <Link href='/'><img src='./home-text.png' alt='coral always there for you' className='w-full md:w-auto md:h-16'/></Link>          
             </div>
         </div>
 

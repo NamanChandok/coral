@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 type Props = {
     errorMsg?: string
@@ -61,7 +62,7 @@ export default function Signup({errorMsg}: Props) {
                 </form>
                 <p className='text-md font-cabin'>Already have an account? <a href='login' className='text-primary font-semibold'>Login</a></p>   
                 <hr className='border w-full'/>
-                <a href='/'><img src='./home-text.png' alt='coral always there for you' className='w-full md:w-auto md:h-16'/></a>                        
+                <Link href='/'><img src='./home-text.png' alt='coral always there for you' className='w-full md:w-auto md:h-16'/></Link>                        
             </div>
         </div>
 

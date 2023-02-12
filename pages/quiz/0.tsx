@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
 
@@ -40,7 +41,7 @@ export default function Home() {
                   />
                 </form>
                 <hr className='border w-full'/>
-                <a href='/'><img src='/home-text.png' alt='coral always there for you' className='w-full md:w-auto md:h-16'/></a>          
+                <Link href='/'><img src='/home-text.png' alt='coral always there for you' className='w-full md:w-auto md:h-16'/></Link>          
             </div>
         </div>
 

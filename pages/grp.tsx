@@ -27,7 +27,7 @@ export default function Home() {
                 <h1 className='font-poppins text-3xl md:text-5xl font-semibold'>Support Groups at Coral</h1>
                 <div className='h-[4px] w-1/3 bg-gradient-to-r from-primary to-secondary'></div>
                 <p className='text-xl font-cabin text-light'>
-                In a support group, members provide each other with various types of help, usually nonprofessional and nonmaterial, for a particular shared, usually burdensome, characteristic. Members with the same issues can come together for sharing coping strategies, to feel more empowered and for a sense of community. The help may take the form of providing and evaluating relevant information, relating personal experiences, listening to and accepting others' experiences, providing sympathetic understanding and establishing social networks. A support group may also work to inform the public or engage in advocacy.
+                In a support group, members provide each other with various types of help, usually nonprofessional and nonmaterial, for a particular shared, usually burdensome, characteristic. Members with the same issues can come together for sharing coping strategies, to feel more empowered and for a sense of community. The help may take the form of providing and evaluating relevant information, relating personal experiences, listening to and accepting others&apos; experiences, providing sympathetic understanding and establishing social networks. A support group may also work to inform the public or engage in advocacy.
                 </p>
             </div>
         </div>

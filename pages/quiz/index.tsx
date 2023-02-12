@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import { GetServerSideProps, NextPage } from "next";
-import { useRouter } from "next/router";
+import Link from 'next/link'
 
 function Quiz() {
 
@@ -37,7 +36,7 @@ function Quiz() {
                   />
                 </form>
                 <hr className='border w-full'/>
-                <a href='/'><img src='./home-text.png' alt='coral always there for you' className='w-full md:w-auto md:h-16'/></a>          
+                <Link href='/'><img src='./home-text.png' alt='coral always there for you' className='w-full md:w-auto md:h-16'/></Link>          
             </div>
         </div>
 
