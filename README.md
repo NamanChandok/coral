@@ -4,4 +4,4 @@ Mental health problems are very common. In a single week, at least one in six of
 
 The chosen track for the project was Healthcare
 
-https://coral-beta.vercel.app/
+https://coral-cyan.vercel.app/
